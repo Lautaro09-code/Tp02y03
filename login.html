@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    <a href="home.html"><img src="MercadoLibre.icon.png" alt="MercadoLibre"></a>
-    <h2>LogIn</h2>
-    <form>
-        <label for="Usuario">Nombre de Usuario:</label>
-        <input type="text" id="Usuario" name="Usuario" required><br>
+    <header>
+        <a href="home.html">
+        <img class="Logotipo" src="MercadoLibre.png" alt="Logotipo de MercadoLibre"></a><br>
+        <form class="search">
+            <input type="text" name="Buscador" placeholder="Buscar productos,marcas">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+            <div class="Comprá"><i class="fa-solid fa-hand-holding-dollar"></i><a href="https://www.mercadolibre.com.ar/l/app#me.audience=unknown&me.bu=3&me.bu_line=26&me.component_id=main_slider_web_ml_0&me.content_id=MS_APP_HACK_24_NOT_LOGGED&me.flow=-1&me.logic=campaigns&me.position=0&audience=unknown&bu=3&bu_line=26&component_id=main_slider_web_ml_0&content_id=MS_APP_HACK_24_NOT_LOGGED&flow=-1&logic=campaigns&position=0&c_id=/home/exhibitors-carousel/element&c_campaign=l%2Fapp&c_element_order=1&c_uid=280e3cda-fade-46c4-956e-d78265072467">Comprá en cuotas y sin tarjeta de crédito</a></div>
+            <nav>
+                <ul class="tablaoculta">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li> <br>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="tablaoculta">
+                    <li><a href="register.html">Crea tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                    <li><a href="login.html">Ingresa <i class="fa-solid fa-right-to-bracket"></i> </a></li>
+                    <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burgerbutton"><i class="fa-solid fa-bars"></i></div><br>
+    </header>
+    <Main>
+        <h2>LogIn</h2>
+        <form>
+            <input type="text" id="Usuario" name="Usuario" required placeholder="Nombre de usuario"><br>
 
-        <label for="Contraseña">Contraseña:</label>
-        <input type="password" id="Contraseña" name="Contraseña" required><br>
+            <input type="password" id="Contraseña" name="Contraseña" required placeholder="Contraseña"><br>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button class="Enviar" type="submit">Enviar</button>
+        </form>
+    </Main>
 </body>
+
 </html>

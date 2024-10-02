@@ -1,0 +1,51 @@
+body{
+    background-color:#ebebeb ;
+}
+header{
+    font-size: 12px;
+    background-color: #EAC926;
+}
+.icono{
+    width: 10px;
+}
+
+.burgerbutton{
+    font-size:33px;
+    background-color: #03264C;
+    padding: 5px 5px 7px 6.5px;
+    display: block;
+    height: 30px ;
+    width: 30px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+}
+.Comprá {
+    margin-top: 15px;
+    text-align: center;
+}
+.Logotipo{
+    text-align: center;
+    height: 50px;
+    width:auto;
+}
+.tablaoculta{
+    list-style-type: none;
+    padding: 0px;
+}
+input[type="text"],
+input[type="password"]{
+width: 80%; 
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #666; 
+border-radius: 5px;
+margin: 5px 5px 20px 8%;
+}
+.Enviar{
+    background-color:#1259c3;
+    width: 90%;
+    height: 40px;
+    margin: -20px 5px 5px 6.3%;
+    border-radius: 5px;
+}
