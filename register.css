@@ -1,6 +1,10 @@
-body{
-    background-color:#ebebeb ;
+body {
+    background-color: #ebebeb;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 header{
     font-size: 12px;
     background-color: #EAC926;
@@ -8,20 +12,8 @@ header{
 .icono{
     width: 10px;
 }
-
-.burgerbutton{
-    font-size:33px;
-    background-color: #03264C;
-    padding: 5px 5px 7px 6.5px;
-    display: block;
-    height: 30px ;
-    width: 30px;
-    margin: auto;
-    color: white;
-    border-radius: 5px;
-}
 .Comprá {
-    margin-top: 15px;
+    margin: 15px ;
     text-align: center;
 }
 .Logotipo{
@@ -33,6 +25,34 @@ header{
     list-style-type: none;
     padding: 0px;
 }
+.burgerbutton{
+    font-size:33px;
+    background-color: #03264C;
+    padding: 1px 5px 7px 6.5px;
+    display: block;
+    height: 30px ;
+    width: 30px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    ul.tablaoculta {
+        display: none; 
+    }
+    .burgerbutton {
+        display: block; 
+    }
+}
+@media (min-width: 767px) {
+    div.burgerbutton {
+        display: none;
+    }
+    ul.tablaoculta {
+        font-size: large;
+    }
+}
+
 h1{
     text-align: center;
 }
@@ -65,7 +85,7 @@ input{
 
 button[type="reset"]{
     background-color:white;
-    width: 90%;
+    width: 84%;
     height: 40px;
     margin: 5px 5px 40px 7%;
     border-radius: 5px;
