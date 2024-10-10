@@ -1,0 +1,151 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-size: 12px;
+    background-color: #EAC926;
+}
+.icono{
+    width: 10px;
+}
+.Comprá {
+    margin: 15px ;
+    text-align: center;
+}
+.Logotipo{
+    text-align: center;
+    height: 50px;
+    width:auto;
+}
+.tablaoculta{
+    list-style-type: none;
+    padding: 0px;
+}
+.burgerbutton{
+    font-size:33px;
+    background-color: #03264C;
+    padding: 1px 5px 7px 6.5px;
+    display: block;
+    height: 30px ;
+    width: 30px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    ul.tablaoculta {
+        display: none; 
+    }
+    }
+    .burgerbutton {
+        display: block; 
+    }
+@media (min-width: 767px) {
+    div.burgerbutton {
+        display: none;
+    }
+    ul.tablaoculta {
+        font-size: large;
+    }
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+    }
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: auto auto 15px auto;
+    }
+.ultimascompras, .ofertas {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    width: 100%;
+    margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .ultimascompras, .ofertas {
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+}
+@media (max-width: 480px) {
+    .ultimascompras, .ofertas {
+        font: size 12px; ;
+        grid-template-columns: 1fr;
+    }
+    article p {
+        display: none;
+    }
+}
+h2 {
+    margin: 10px 0; 
+    text-align: center;
+}
+article {
+    border-top: 1px solid #ebebeb; 
+    border-radius: 5px; 
+    padding: 15px; 
+    background-color: white;  
+}
+.truck{
+    color: #39b54a;
+    font-size: 20px;
+    position: relative;
+    right: 35.8px;
+    bottom: 8px;
+}
+.circl{
+    color: #39b54a;
+    font-size: 40px;
+}
+
+.imgarticle {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0px 40px 0px;
+    }
+.particle{
+    font-size: 18px;
+    display: block;
+    text-align: start;
+    margin-bottom: 0px;
+}
+.particle2{
+    color: #39b54a;
+    display: block;
+    text-align: start;
+    margin-top: 0px;
+}
+
+footer{
+    padding: 20px;
+    background-color: white;
+}
+.footersection {
+    text-align:center ;
+}
+h3 {
+    margin-bottom: -10px; 
+    margin-top: 0px;
+}
+.iconfooter{
+    color: #1259c3;;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+.Copyright{
+    text-align: left;
+    font-size: x-small;
+}
+.pfooter{
+    margin-bottom: 40px;
+    margin-top: 8px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+        <img class="Logotipo" src="MercadoLibre.png" alt="Logotipo de MercadoLibre"></a><br>
+        <form class="search">
+            <input type="text" name="Buscador" placeholder="Buscar productos,marcas">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+            <div class="Comprá"><i class="fa-solid fa-hand-holding-dollar"></i><a href="https://www.mercadolibre.com.ar/l/app#me.audience=unknown&me.bu=3&me.bu_line=26&me.component_id=main_slider_web_ml_0&me.content_id=MS_APP_HACK_24_NOT_LOGGED&me.flow=-1&me.logic=campaigns&me.position=0&audience=unknown&bu=3&bu_line=26&component_id=main_slider_web_ml_0&content_id=MS_APP_HACK_24_NOT_LOGGED&flow=-1&logic=campaigns&position=0&c_id=/home/exhibitors-carousel/element&c_campaign=l%2Fapp&c_element_order=1&c_uid=280e3cda-fade-46c4-956e-d78265072467">Comprá en cuotas y sin tarjeta de crédito</a></div>
+            <nav>
+                <ul class="tablaoculta">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li> 
+                </ul>
+            </nav>
+            <nav>
+                <ul class="tablaoculta">
+                    <li><a href="register.html">Crea tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                    <li><a href="login.html">Ingresa <i class="fa-solid fa-right-to-bracket"></i> </a></li>
+                    <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burgerbutton"><i class="fa-solid fa-bars"></i></div><br>
+    </header>
+    <h1>Registro de Usuario</h1>
+    <form>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellido"><br>
+
+        <input type="text" id="Usuario" name="Usuario" required placeholder="Nombre de usuario"><br>
+
+        <input type="email" id="email" name="email" required placeholder="E-mail"><br>
+
+        <label class="nacimiento" for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" required><br>
+
+        <input type="text" id="domicilio" name="domicilio" required placeholder="Domicilio"><br>
+
+        <label>Perfil de usuario:</label><br>
+        <input type="radio" id="comprar" name="Acción" value="comprar" required>
+        <label for="comprar">Comprador</label>
+        <input type="radio" id="vender" name="Acción" value="vender" required>
+        <label for="vender">Vendedor</label><br>
+
+        <label for="intereses">Categorías de interés:</label><br>
+        <input type="checkbox" id="electro" name="intereses" value="Electro">
+        <label for="electro">Electro</label><br>
+        <input type="checkbox" id="moda" name="intereses" value="Moda">
+        <label for="moda">Moda</label><br>
+        <input type="checkbox" id="hogar" name="intereses" value="Hogar">
+        <label for="hogar">Hogar</label><br>
+        <input type="checkbox" id="jugueteria" name="intereses" value="Juguetería">
+        <label for="jugueteria">Juguetería</label><br>
+        <input type="checkbox" id="vida_sana" name="intereses" value="Vida Sana">
+        <label for="vida_sana">Vida Sana</label><br>
+
+        <label for="foto">Foto de usuario:</label><br>
+        <input type="file" id="foto" name="foto"><br>
+
+        <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña"><br>
+
+        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required placeholder="Confirmar contraseña"><br>
+
+        <button class="Enviar" type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+
+</html>

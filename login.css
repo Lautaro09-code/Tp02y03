@@ -1,0 +1,71 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-size: 12px;
+    background-color: #EAC926;
+}
+.icono{
+    width: 10px;
+}
+.Comprá {
+    margin: 15px ;
+    text-align: center;
+}
+.Logotipo{
+    text-align: center;
+    height: 50px;
+    width:auto;
+}
+.tablaoculta{
+    list-style-type: none;
+    padding: 0px;
+}
+.burgerbutton{
+    font-size:33px;
+    background-color: #03264C;
+    padding: 1px 5px 7px 6.5px;
+    display: block;
+    height: 30px ;
+    width: 30px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    ul.tablaoculta {
+        display: none; 
+    }
+    .burgerbutton {
+        display: block; 
+    }
+}
+@media (min-width: 767px) {
+    div.burgerbutton {
+        display: none;
+    }
+    ul.tablaoculta {
+        font-size: large;
+    }
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666; 
+    border-radius: 5px;
+    margin: 5px 5px 20px 8%;
+}
+.Enviar{
+    background-color:#1259c3;
+    width: 10%;
+    border-radius: 5px;
+    margin: 0px;
+    width: 84% !important;
+}
+.login{
+    width: 100%;
+}
