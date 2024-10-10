@@ -30,7 +30,9 @@ header{
     display: inline;
 }
 img.Logotipo{
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 70%;
 }
 .search{
     width: 50%;
@@ -126,7 +128,21 @@ article{
     box-sizing: border-box;
     background-color: white ;
     margin: 5px 0px 5px 5.2%;
+    transition: box-shadow 0.3s ease;
 }
+article:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.Descripcion {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+article:hover .Descripcion {
+    opacity: 1;
+    visibility: visible;
+}
+
 .Icontruck{
     text-align: end;
 }
@@ -141,7 +157,12 @@ article{
     left: 29px;
     bottom: 5px;
     color: #39b54a;
+    display: inline-block;
+    transition: transform 1.5s ease;
 }
+.truck:hover {
+        transform: rotate(-90deg);
+    }
 @media screen and (min-width: 768px){
     main{
         width: 100%;
@@ -188,9 +209,6 @@ article{
         display: grid;
         grid-template-columns: 1fr 1fr ;
     }
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
     .burgerbutton{
         display: none;
     }
@@ -202,6 +220,10 @@ article{
     }
 }
 @media screen and (min-width: 1024px){
+    .footerconteiner{
+        display: flex;
+        width: 100%;
+    }
     .nav{
         display: grid;
         grid-template-columns: 1.5fr 1fr 1.5fr;
@@ -248,6 +270,9 @@ article{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+}
+.footersection:hover .iconfooter{
+    color: #EAC926;
 }
 .pfooter{
     font-size: 12px;
